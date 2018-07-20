@@ -1,0 +1,8 @@
+{
+    "iot_config":{
+        "key":"5bc2e275e21c0b5a5b1c",
+        "channel":"9f997c65aaf151073f741c0e4d3dc4e4",
+        "device_token":"device-token-example",
+        "event_topics":["iot-event-type-1", "iot-event-type-2", "..." ]
+    }
+}

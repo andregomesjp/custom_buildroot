@@ -1,0 +1,8 @@
+config BR2_PACKAGE_PYTHON_W1THERMSENSOR
+	bool "python-w1thermsensor"
+	select BR2_PACKAGE_PYTHON_CLICK # runtime
+	help
+	  This little pure python module provides a single class to
+	  get the temperature of a w1 sensor.
+
+	  http://github.com/timofurrer/w1thermsensor

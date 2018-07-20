@@ -1,0 +1,14 @@
+[Unit]
+Description=Natasha application
+After=network.target dbus.service
+
+[Service]
+ExecStart=/home/nucleus/natasha
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-failure
+RestartSec=1s
+User=root
+
+[Install]
+WantedBy=multi-user.target

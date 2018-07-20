@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_BEAUTIFULSOUP4
+	bool "python-beautifulsoup4"
+	help
+	  Screen-scraping library.
+
+	  http://www.crummy.com/software/BeautifulSoup/bs4/

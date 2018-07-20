@@ -1,0 +1,8 @@
+{
+    "rest_config":{
+        "base_url":"https://new-zait-dev.herokuapp.com/api/iot_events",
+        "authorization":"Token token=9f997c65aaf151073f741c0e4d3dc4e4",
+        "content_type":""
+    }
+}
+

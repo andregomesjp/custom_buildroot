@@ -1,0 +1,5 @@
+# md5, sha256 from https://pypi.org/pypi/beautifulsoup4/json
+md5	c17714d0f91a23b708a592cb3c697728  beautifulsoup4-4.6.0.tar.gz
+sha256	808b6ac932dccb0a4126558f7dfdcf41710dd44a4ef497a0bb59a77f9f078e89  beautifulsoup4-4.6.0.tar.gz
+# Locally computed sha256 checksums
+sha256	a47ea51236098464fe0b4f559743590b533056d9e00f49ecbf80299fab47e231  COPYING.txt

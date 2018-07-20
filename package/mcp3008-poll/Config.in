@@ -1,0 +1,6 @@
+config BR2_PACKAGE_MCP3008_POLL
+        bool "mcp3008-poll"
+        help
+          Command line app for testing MCP3008 ADCs. 
+
+          https://github.com/scottellis/mcp3008-poll

@@ -1,0 +1,10 @@
+config BR2_PACKAGE_PYTHON_REQUESTS
+	bool "python-requests"
+	select BR2_PACKAGE_PYTHON_CHARDET # runtime
+	select BR2_PACKAGE_PYTHON_IDNA # runtime
+	select BR2_PACKAGE_PYTHON_URLLIB3 # runtime
+	select BR2_PACKAGE_PYTHON_CERTIFI # runtime
+	help
+	  Python HTTP for Humans.
+
+	  http://python-requests.org

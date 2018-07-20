@@ -1,0 +1,6 @@
+config BR2_PACKAGE_SERIALECHO
+        bool "serialecho"
+        help
+          Command line serial port test application.
+
+          https://jumpnowtek.com

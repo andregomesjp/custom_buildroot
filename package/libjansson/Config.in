@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBJANSSON
+	bool "libjansson"
+	help
+		TODO

@@ -1,0 +1,8 @@
+config BR2_PACKAGE_SENTINEL
+	bool "sentinel"
+	select BR2_PACKAGE_QT5
+	select BR2_PACKAGE_QT5BASE_DBUS
+	depends on BR2_PACKAGE_JANSSON
+	select BR2_PACKAGE_WIRINGPI
+	help
+		TODO

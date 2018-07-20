@@ -1,0 +1,6 @@
+config BR2_PACKAGE_AIOROSPLAYER
+	bool "aiorosplayer"
+	select BR2_PACKAGE_DBUS-PYTHON
+	select BR2_PACKAGE_GTTS
+	help
+		TODO

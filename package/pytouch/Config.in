@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PYTOUCH
+        bool "pytouch"
+        depends on BR2_PACKAGE_PYTHON_PYQT5
+        help
+          Simple PyQt5 touchscreen test application

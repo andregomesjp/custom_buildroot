@@ -1,0 +1,6 @@
+config BR2_PACKAGE_MCP3008_SPEEDTEST
+        bool "mcp3008-speedtest"
+        help
+          Command line app for testing MCP3008 ADCs using spidev. 
+
+          https://github.com/scottellis/mcp3008-speedtest

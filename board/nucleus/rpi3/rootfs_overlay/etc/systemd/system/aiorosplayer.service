@@ -1,0 +1,12 @@
+[Unit]
+Description=Audio Service
+After=network.target dbus.service
+
+[Service]
+Type=fork
+ExecStart=/home/nucleus/aiorosplayer
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
