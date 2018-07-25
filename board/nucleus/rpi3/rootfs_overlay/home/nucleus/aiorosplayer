@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import gobject
 import dbus, dbus.service, dbus.exceptions
 import sys
 from dbus.mainloop.glib import DBusGMainLoop
-from gi.repository import GLib
 
 # Initialize a main loop
 DBusGMainLoop(set_as_default=True)
-loop = GLib.MainLoop()
+loop = gobject.MainLoop()
 
 # Declare a name where our service can be reached
 try:
     bus_name = dbus.service.BusName("org.nucleus",
-                                    bus=dbus.SessionBus(),
+                                    bus=dbus.SystemBus(),
                                     do_not_queue=True)
 except dbus.exceptions.NameExistsException:
     print("service is already running")
@@ -22,6 +22,7 @@ except dbus.exceptions.NameExistsException:
 try:
     from PlayAudio import PlayAudio
     PlayAudio(bus_name)
+    print("loop run")
     loop.run()
 except KeyboardInterrupt:
     print("keyboard interrupt received")
