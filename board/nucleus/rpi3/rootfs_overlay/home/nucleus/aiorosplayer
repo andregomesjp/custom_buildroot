@@ -4,8 +4,24 @@ import gobject
 import dbus, dbus.service, dbus.exceptions
 import sys
 from dbus.mainloop.glib import DBusGMainLoop
+import logging
+
+logger = logging.getLogger('aiorosplayer')
+logger.setLevel(logging.DEBUG)
+fh = logging.FileHandler('/home/nucleus/periodic/aioros.log', encoding = "UTF-8")
+fh.setLevel(logging.DEBUG)
+ch = logging.StreamHandler()
+ch.setLevel(logging.ERROR)
+formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
+ch.setFormatter(formatter)
+fh.setFormatter(formatter)
+logger.addHandler(ch)
+logger.addHandler(fh)
+
+
 
 # Initialize a main loop
+logger.info('Starting Audio Service')
 DBusGMainLoop(set_as_default=True)
 loop = gobject.MainLoop()
 
@@ -14,19 +30,19 @@ try:
     bus_name = dbus.service.BusName("org.nucleus",
                                     bus=dbus.SystemBus(),
                                     do_not_queue=True)
+    logger.info('Bus Created')
 except dbus.exceptions.NameExistsException:
-    print("service is already running")
+    logger.error("service is already running")
     sys.exit(1)
 
 # Run the loop
 try:
     from PlayAudio import PlayAudio
     PlayAudio(bus_name)
-    print("loop run")
     loop.run()
 except KeyboardInterrupt:
-    print("keyboard interrupt received")
+    logger.error("keyboard interrupt received")
 except Exception as e:
-    print("Unexpected exception occurred: '{}'".format(str(e)))
+    logger.error("Unexpected exception occurred: '{}'".format(str(e)))
 finally:
     loop.quit()

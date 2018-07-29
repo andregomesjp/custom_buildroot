@@ -3,7 +3,7 @@ Description=Audio Service
 After=network.target dbus.service
 
 [Service]
-Type=fork
+Type=idle
 ExecStart=/home/nucleus/aiorosplayer
 Restart=always
 User=root
