@@ -52,6 +52,14 @@ config BR2_PACKAGE_QT5BASE_EXAMPLES
 config BR2_PACKAGE_QT5BASE_NETWORK
 	def_bool y
 
+if BR2_PACKAGE_QT5BASE_NETWORK
+   config BR2_PACKAGE_QT5BASE_OPENSSL
+   bool "use openssl"
+   depends on BR2_PACKAGE_OPENSSL
+   default BR2_PACKAGE_OPENSSL
+   help
+     This option toggles use of OpenSSL in Qt5
+ endif
 config BR2_PACKAGE_QT5BASE_CONCURRENT
 	bool "concurrent module"
 	help
