@@ -1188,3 +1188,4 @@ dtparam=audio=on
 
 ## Disable RPi3 bluetooth to enable serial console on UART0
 dtoverlay=pi3-disable-bt
+dtoverlay=w1-gpio-pullup,gpiopin=4
