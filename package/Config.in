@@ -63,6 +63,7 @@ menu "Audio and video applications"
 	source "package/python-gtts/Config.in"
 	source "package/python-gtts_token/Config.in"
 	source "package/python-bs4/Config.in"
+	source "package/python-wiringpi/Config.in"
 endmenu
 
 menu "Compressors and decompressors"

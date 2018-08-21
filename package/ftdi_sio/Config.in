@@ -1,0 +1,5 @@
+config BR2_PACKAGE_FTDI_SIO
+	bool "ftdi_sio"
+	help
+		TODO
+

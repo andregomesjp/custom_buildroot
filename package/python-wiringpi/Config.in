@@ -1,0 +1,8 @@
+config BR2_PACKAGE_PYTHON_WIRINGPI
+	bool "python-wiringpi"
+	help
+	  A python interface to WiringPi 2.0 library which allows for
+	  easily interfacing with the GPIO pins of the Raspberry Pi.
+	  Also supports i2c and SPI.
+
+	  https://github.com/WiringPi/WiringPi-Python/

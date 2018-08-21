@@ -1,0 +1,5 @@
+# md5, sha256 from https://pypi.org/pypi/wiringpi/json
+md5	487872972c666634fca0cd3c52c1ee14  wiringpi-2.46.0.tar.gz
+sha256	1be697c3a97274effcf09d6bf978a795734aaa0080f9d09b080c6a263f1ac31d  wiringpi-2.46.0.tar.gz
+# Locally computed sha256 checksums
+sha256	da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768  LICENSE.txt
